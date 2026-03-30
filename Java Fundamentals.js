@@ -155,3 +155,18 @@ console.log(NewMappedEvenArray)
 
 let NewMappedOddArray = NewFilterOddScore.map(score => score*3)
 console.log(NewMappedOddArray)
+// doing all of this in a 1 line
+var scores = [12,14,15,16,17]
+let SumofValue = scores.filter(score => score%2 == 0).map(score => score*3).reduce((sum,val)=> sum+val,0)
+console.log(SumofValue)
+
+//sorting
+let fruits =["banana","mango","pomegrante","apple"]
+console.log(fruits.sort())
+console.log(fruits.reverse())
+
+// sorting for numbers, we will need to insert code in the sort method
+
+var scores = [12,14,15,16,17]
+console.log(scores.sort((a,b) => a-b)) // ascending order
+console.log(scores.sort((a,b) => b-a)) // descending order
