@@ -138,13 +138,27 @@
 					"listen": "test",
 					"script": {
 						"exec": [
+							"// scripts obejctive",
+							"// verify if there is an entry called Cypress",
+							"// verify if cypress entry has course title and pricce",
+							"// verify if sum of API courses equals to 90",
+							"// verify if Web Automation Course titles are shown as expected titles",
+							"",
 							"JsonData = pm.response.json();",
 							"pm.test(\"Coursse certification\", function()",
 							"{",
 							"    const cypressObject = jsonData.courses.webAutomation.find(m => m.courseTitle === \"Cypress\")",
 							"    pm.expect(cypressObject).to.be.an(\"object\", \"Cypress not found\");",
 							"}",
-							");"
+							");",
+							"",
+							"// verify if cypress entry has course title and pricce",
+							"",
+							"pm.test(\"properties certification\", function()",
+							"{",
+							"    const cypressObject = jsonData.courses.webAutomation.find(m => m.courseTitle === \"Cypress\")",
+							"    pm.expect(cypressObject).to.have.all.keys('courseTitle', 'price')   ",
+							"});"
 						],
 						"type": "text/javascript",
 						"packages": {},
