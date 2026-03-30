@@ -91,4 +91,21 @@ marks.unshift(12)
 console.log(marks)
 console.log(marks.indexOf(100))
 //120 in the array
-console.log(marks.includes(120))
+console.log(marks.includes(120)) 
+
+// printing all the elements of the array
+for(i=0; i<marks.length; i++)
+{
+    console.log(marks[i])
+}
+function SumMarks()
+{
+var sum =0
+for(let i =0;i<marks.length;i++)
+{
+    //console.log(marks[i])
+    sum = sum + marks[i] //32+40
+}
+return sum;
+}
+console.log(SumMarks())
