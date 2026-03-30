@@ -144,3 +144,14 @@ let NewFilterEvenScore = scores.filter(score => score%2 == 0)
 console.log(NewFilterEvenScore)
 let NewFilterOddScore = scores.filter(score => score%2 == 1)
 console.log(NewFilterOddScore)
+
+//map => create a new array provided by the condition
+
+let NewMappedArray = scores.map(score => score*3)
+console.log(NewMappedArray)
+
+let NewMappedEvenArray = NewFilterEvenScore.map(score => score*3)
+console.log(NewMappedEvenArray)
+
+let NewMappedOddArray = NewFilterOddScore.map(score => score*3)
+console.log(NewMappedOddArray)
