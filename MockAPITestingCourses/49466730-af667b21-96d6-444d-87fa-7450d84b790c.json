@@ -20,6 +20,8 @@
 							"    if (item.category == \"Javascript\")",
 							"    {",
 							"        console.log(item.course)",
+							"        console.log(item.price)",
+							"        console.log(item.category)",
 							"    }",
 							"});"
 						],
