@@ -15,8 +15,11 @@
 						"exec": [
 							"const responsejson = xml2Js(p.response.text())",
 							"console.log(responsejson)",
-							"console.log(responsejson[\"soap:Envelope\"][\"soap:Body\"][\"m:NumberToWordsResponse\"][\"m:NumberToWordsResult\"]);",
-							""
+							"pm.test(\"Validate String of response\", function()",
+							"{",
+							"const actualValue =responsejson[\"soap:Envelope\"][\"soap:Body\"][\"m:NumberToWordsResponse\"][\"m:NumberToWordsResult\"];",
+							"    pm.expect(\"Four hundred\").to.be.eql(\"actualValue\");",
+							"});"
 						],
 						"type": "text/javascript",
 						"packages": {},
