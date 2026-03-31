@@ -92,7 +92,7 @@
 							"{",
 							"const jsonData = pm.response.json();    ",
 							"",
-							"pm.expect(jsonData >1000).to.be.true;",
+							"pm.expect(jsonData.students >10000).to.be.true;",
 							"",
 							"pm.expect(jsonData.category).to.eql(\"Javascript\");",
 							"});"
