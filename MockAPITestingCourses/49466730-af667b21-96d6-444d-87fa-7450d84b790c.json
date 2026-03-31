@@ -19,9 +19,7 @@
 							"{",
 							"    if (item.category == \"Javascript\")",
 							"    {",
-							"        console.log(item.course)",
-							"        console.log(item.price)",
-							"        console.log(item.category)",
+							"        pm.environment.set(\"course\", item.course);",
 							"    }",
 							"});"
 						],
@@ -84,6 +82,20 @@
 		},
 		{
 			"name": "GetCourseDetails",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "b7c20171-e100-46a3-9f81-c196b94a9231",
+						"exec": [
+							""
+						],
+						"type": "text/javascript",
+						"packages": {},
+						"requests": {}
+					}
+				}
+			],
 			"id": "49466730-96320285-7fcd-4562-81fb-fe9350dc2858",
 			"protocolProfileBehavior": {
 				"disableBodyPruning": true
@@ -92,7 +104,7 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "{{url}}/getcoursedetails?name=postman",
+					"raw": "{{url}}/getcoursedetails?name={{course}}",
 					"host": [
 						"{{url}}"
 					],
@@ -102,7 +114,7 @@
 					"query": [
 						{
 							"key": "name",
-							"value": "postman"
+							"value": "{{course}}"
 						}
 					]
 				}
