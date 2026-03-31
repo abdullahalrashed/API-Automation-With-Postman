@@ -11,7 +11,11 @@
 			"protocolProfileBehavior": {
 				"disableBodyPruning": true,
 				"disabledSystemHeaders": {
-					"content-type": true
+					"content-type": true,
+					"connection": true,
+					"accept-encoding": true,
+					"accept": true,
+					"user-agent": true
 				}
 			},
 			"request": {
