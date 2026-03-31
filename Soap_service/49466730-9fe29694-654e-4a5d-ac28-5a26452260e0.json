@@ -19,7 +19,15 @@
 							"{",
 							"const actualValue =responsejson[\"soap:Envelope\"][\"soap:Body\"][\"m:NumberToWordsResponse\"][\"m:NumberToWordsResult\"];",
 							"    pm.expect(pm.collectionVariables.get(\"val\")).to.be.eql(\"actualValue\");",
-							"});"
+							"});",
+							"",
+							"pm.test(\"parsing the response\",function()",
+							"{",
+							"",
+							"   pm.response.to.have.status(200);",
+							"   pm.expect(pm.response.text()).to.include(pm.collectionVariables.get(\"result\"));",
+							"});",
+							""
 						],
 						"type": "text/javascript",
 						"packages": {},
