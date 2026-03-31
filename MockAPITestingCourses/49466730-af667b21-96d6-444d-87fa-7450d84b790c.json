@@ -88,11 +88,14 @@
 					"script": {
 						"id": "b7c20171-e100-46a3-9f81-c196b94a9231",
 						"exec": [
+							"pm.test(\"validation student count\", ()=>",
+							"{",
 							"const jsonData = pm.response.json();    ",
 							"",
 							"pm.expect(jsonData >1000).to.be.true;",
 							"",
-							"pm.expect(jsonData.category).to.eql(\"Javascript\");"
+							"pm.expect(jsonData.category).to.eql(\"Javascript\");",
+							"}"
 						],
 						"type": "text/javascript",
 						"packages": {},
