@@ -228,12 +228,12 @@
 				"header": [
 					{
 						"key": "Authorization",
-						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2OWNjYzNkYWY4NmJhNTFhNjUzYzc0MzIiLCJ1c2VyRW1haWwiOiJyYWFzaGFyZTFAZ21haWwuY29tIiwidXNlck1vYmlsZSI6MTg4MTAwNTQwMiwidXNlclJvbGUiOiJjdXN0b21lciIsImlhdCI6MTc3NTAzNzgxMywiZXhwIjoxODA2NTk1NDEzfQ.7JYpYrGOI9d__pmupwicdcCRFxQdccoJkpmuJeYJPgM",
+						"value": "{{token}}",
 						"type": "text"
 					}
 				],
 				"url": {
-					"raw": "https://rahulshettyacademy.com/api/ecom/order/get-orders-details?id=69ccf19ef86ba51a653d1a55",
+					"raw": "https://rahulshettyacademy.com/api/ecom/order/get-orders-details?id={{order_id}}",
 					"protocol": "https",
 					"host": [
 						"rahulshettyacademy",
@@ -254,7 +254,7 @@
 						},
 						{
 							"key": "id",
-							"value": "69ccf19ef86ba51a653d1a55"
+							"value": "{{order_id}}"
 						}
 					]
 				}
