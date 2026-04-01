@@ -162,6 +162,21 @@
 		},
 		{
 			"name": "Create Order",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "009545d4-772b-460a-99a0-f5cea241f80d",
+						"exec": [
+							"const jsonData = pm.response.json();",
+							"pm.collectionVariables.set(\"order_id\", jsonData.orders[0]);"
+						],
+						"type": "text/javascript",
+						"packages": {},
+						"requests": {}
+					}
+				}
+			],
 			"id": "49466730-1f63d56b-9ff4-43be-a8ff-42018944b9bf",
 			"protocolProfileBehavior": {
 				"disableBodyPruning": true
