@@ -173,9 +173,15 @@
 			},
 			"request": {
 				"method": "DELETE",
-				"header": [],
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2OWNjYzNkYWY4NmJhNTFhNjUzYzc0MzIiLCJ1c2VyRW1haWwiOiJyYWFzaGFyZTFAZ21haWwuY29tIiwidXNlck1vYmlsZSI6MTg4MTAwNTQwMiwidXNlclJvbGUiOiJjdXN0b21lciIsImlhdCI6MTc3NTAzNzgxMywiZXhwIjoxODA2NTk1NDEzfQ.7JYpYrGOI9d__pmupwicdcCRFxQdccoJkpmuJeYJPgM",
+						"type": "text"
+					}
+				],
 				"url": {
-					"raw": "https://rahulshettyacademy.com/api/ecom/product/delete-product/{{productId}}",
+					"raw": "https://rahulshettyacademy.com/api/ecom/product/delete-product/69cceeaef86ba51a653d100f",
 					"protocol": "https",
 					"host": [
 						"rahulshettyacademy",
@@ -186,7 +192,7 @@
 						"ecom",
 						"product",
 						"delete-product",
-						"{{productId}}"
+						"69cceeaef86ba51a653d100f"
 					]
 				}
 			},
