@@ -169,7 +169,7 @@
 						"id": "009545d4-772b-460a-99a0-f5cea241f80d",
 						"exec": [
 							"const jsonData = pm.response.json();",
-							"pm.collectionVariables.set(\"orderId\",jsonData.orders);",
+							"pm.collectionVariables.set(\"order_id\",jsonData.orders);",
 							"pm.expect(jsonData.message).to.eql(\"Order Placed Successfully\");"
 						],
 						"type": "text/javascript",
@@ -227,7 +227,7 @@
 						"exec": [
 							"const jsonData = pm.response.json();",
 							"pm.response.to.have.status(200);",
-							"pm.expect(jsonData.productName).to.eql(pm.collectionVariables.get(\"productName\");",
+							"pm.expect(jsonData.data.productName).to.eql(pm.collectionVariables.get(\"productName\");",
 							""
 						],
 						"type": "text/javascript",
