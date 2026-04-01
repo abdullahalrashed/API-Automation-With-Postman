@@ -166,6 +166,18 @@
 			"response": []
 		},
 		{
+			"name": "view order details",
+			"id": "49466730-e65bf0a0-0ad9-44e0-aced-8c256d8f0eb1",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
 			"name": "Delete product",
 			"id": "49466730-2e43a86d-ab82-4846-9c7b-4f60b3c02c4e",
 			"protocolProfileBehavior": {
@@ -195,18 +207,6 @@
 						"69cceeaef86ba51a653d100f"
 					]
 				}
-			},
-			"response": []
-		},
-		{
-			"name": "view order details",
-			"id": "49466730-e65bf0a0-0ad9-44e0-aced-8c256d8f0eb1",
-			"protocolProfileBehavior": {
-				"disableBodyPruning": true
-			},
-			"request": {
-				"method": "GET",
-				"header": []
 			},
 			"response": []
 		}
