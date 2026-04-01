@@ -197,6 +197,18 @@
 				}
 			},
 			"response": []
+		},
+		{
+			"name": "view order detials",
+			"id": "49466730-e65bf0a0-0ad9-44e0-aced-8c256d8f0eb1",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
 		}
 	]
 }
