@@ -66,15 +66,12 @@
 				{
 					"listen": "test",
 					"script": {
-						"id": "054886c8-b6f6-4e61-8a97-08acbea4418c",
+						"type": "text/javascript",
 						"exec": [
 							"const jsondata = pm.response.json();",
-							"pm.collectionVariables.set(\"productId\", jsondata.productId);",
+							"pm.collectionVariables.set(\"product_id\", jsondata.productId);",
 							"pm.expect(jsondata.message).to.eql(\"Product Added Successfully\")"
-						],
-						"type": "text/javascript",
-						"packages": {},
-						"requests": {}
+						]
 					}
 				}
 			],
