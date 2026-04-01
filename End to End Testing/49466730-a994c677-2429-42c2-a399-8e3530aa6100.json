@@ -16,7 +16,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{userEmail: \"raashare1@gmail.com\", userPassword: \"SUSTpme2020\"\n}",
+					"raw": "{\n    \"userEmail\": \"raashare1@gmail.com\",\n    \"userPassword\": \"SUSTpme2020\"\n}",
 					"options": {
 						"raw": {
 							"language": "json"
