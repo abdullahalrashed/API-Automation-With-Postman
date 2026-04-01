@@ -267,7 +267,7 @@
 		{
 			"listen": "prerequest",
 			"script": {
-				"id": "9258eba9-0485-4a66-b1a6-953efa9b289c",
+				"id": "e2165b0b-c19e-4557-a871-e36e17a33c26",
 				"type": "text/javascript",
 				"packages": {},
 				"requests": {},
@@ -279,7 +279,7 @@
 		{
 			"listen": "test",
 			"script": {
-				"id": "bd0b1a7c-ec07-4fc9-9ad5-0812a5e3b2f4",
+				"id": "d8d0f718-ef56-4382-9b81-81d69864f974",
 				"type": "text/javascript",
 				"packages": {},
 				"requests": {},
@@ -297,6 +297,11 @@
 		{
 			"key": "user_id",
 			"value": ""
+		},
+		{
+			"key": "product_id",
+			"value": "",
+			"type": "default"
 		}
 	]
 }
