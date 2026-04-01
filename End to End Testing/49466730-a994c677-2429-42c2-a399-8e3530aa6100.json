@@ -48,7 +48,18 @@
 			},
 			"request": {
 				"method": "POST",
-				"header": [],
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2OWNjYzNkYWY4NmJhNTFhNjUzYzc0MzIiLCJ1c2VyRW1haWwiOiJyYWFzaGFyZTFAZ21haWwuY29tIiwidXNlck1vYmlsZSI6MTg4MTAwNTQwMiwidXNlclJvbGUiOiJjdXN0b21lciIsImlhdCI6MTc3NTAzMjY2MSwiZXhwIjoxODA2NTkwMjYxfQ.PKrwCAILp1vh0pjFsiaTecE61ZkwChzwIOG5s1aYe7Q",
+						"type": "text"
+					},
+					{
+						"key": "productImage",
+						"value": "",
+						"type": "text"
+					}
+				],
 				"body": {
 					"mode": "formdata",
 					"formdata": [
@@ -59,7 +70,7 @@
 						},
 						{
 							"key": "productAddedBy",
-							"value": "{{userId}}",
+							"value": "69ccc3daf86ba51a653c7432",
 							"type": "text"
 						},
 						{
