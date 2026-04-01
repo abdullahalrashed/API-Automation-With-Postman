@@ -133,6 +133,15 @@
 			"request": {
 				"method": "POST",
 				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"orders\": [{\"country\": \"Bangladesh\", \"productOrderedId\": \"69cceeaef86ba51a653d100f\"}]}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
 				"url": {
 					"raw": "https://rahulshettyacademy.com/api/ecom/order/create-order",
 					"protocol": "https",
