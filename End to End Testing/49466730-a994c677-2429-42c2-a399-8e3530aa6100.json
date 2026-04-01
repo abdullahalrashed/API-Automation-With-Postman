@@ -169,7 +169,8 @@
 						"id": "009545d4-772b-460a-99a0-f5cea241f80d",
 						"exec": [
 							"const jsonData = pm.response.json();",
-							"pm.collectionVariables.set(\"order_id\", jsonData.orders[0]);"
+							"pm.collectionVariables.set(\"order_id\", jsonData.orders[0]);",
+							"pm.expect(jsonData.message).to.eql(\"Order Placed Successfully\");"
 						],
 						"type": "text/javascript",
 						"packages": {},
