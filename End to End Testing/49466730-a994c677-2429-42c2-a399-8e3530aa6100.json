@@ -108,7 +108,7 @@
 					]
 				},
 				"url": {
-					"raw": "https://rahulshettyacademy.com/api/ecom/product/add-product\n",
+					"raw": "https://rahulshettyacademy.com/api/ecom/product/add-product",
 					"protocol": "https",
 					"host": [
 						"rahulshettyacademy",
@@ -118,7 +118,7 @@
 						"api",
 						"ecom",
 						"product",
-						"add-product\n"
+						"add-product"
 					]
 				}
 			},
