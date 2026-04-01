@@ -271,6 +271,21 @@
 		},
 		{
 			"name": "Delete product",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "26f3153a-9e41-4d1a-86e5-c3f326992aa1",
+						"exec": [
+							"const jsonData = pm.response.json();",
+							"pm.expect(jsonData).to.have.property('message', 'Product deleted successfully');"
+						],
+						"type": "text/javascript",
+						"packages": {},
+						"requests": {}
+					}
+				}
+			],
 			"id": "49466730-2e43a86d-ab82-4846-9c7b-4f60b3c02c4e",
 			"protocolProfileBehavior": {
 				"disableBodyPruning": true
@@ -280,7 +295,7 @@
 				"header": [
 					{
 						"key": "Authorization",
-						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2OWNjYzNkYWY4NmJhNTFhNjUzYzc0MzIiLCJ1c2VyRW1haWwiOiJyYWFzaGFyZTFAZ21haWwuY29tIiwidXNlck1vYmlsZSI6MTg4MTAwNTQwMiwidXNlclJvbGUiOiJjdXN0b21lciIsImlhdCI6MTc3NTAzNzgxMywiZXhwIjoxODA2NTk1NDEzfQ.7JYpYrGOI9d__pmupwicdcCRFxQdccoJkpmuJeYJPgM",
+						"value": "{{token}}",
 						"type": "text"
 					}
 				],
